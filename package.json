@@ -7,19 +7,14 @@
     "build": "preact build",
     "serve": "preact build && preact serve",
     "dev": "preact watch",
-    "lint": "eslint src"
+    "lint": "prettier --single-quote --no-semi --trailing-comma es5 --no-bracket-spacing index.js style.css",
+    "lint:dry": "npm run lint -- --list-different",
+    "lint:fix": "npm run lint -- --write"
   },
-  "eslintConfig": {
-    "extends": "eslint-config-synacor"
-  },
-  "eslintIgnore": [
-    "build/*"
-  ],
   "devDependencies": {
-    "eslint": "^4.15.0",
-    "eslint-config-synacor": "^2.0.4",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.1.0"
+    "preact-cli": "^2.1.0",
+    "prettier": "^1.9.2"
   },
   "dependencies": {
     "preact": "^8.2.7",
