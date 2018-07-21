@@ -14,10 +14,10 @@
   "devDependencies": {
     "if-env": "^1.0.4",
     "preact-cli": "^2.2.1",
-    "prettier": "^1.11.1"
+    "prettier": "^1.13.7"
   },
   "dependencies": {
-    "preact": "^8.2.7",
+    "preact": "^8.2.9",
     "preact-compat": "^3.18.0"
   }
 }
